@@ -3,8 +3,9 @@ import urllib.parse
 from pymongo import MongoClient
 
 # 1. Connection Setup
-username = "Gurpreet"
-password = "gurpreet@16"
+# always use .env file for storing credentials , for safety purpose
+username = "XXXXX"
+password = "XXXXX"
 escaped_password = urllib.parse.quote_plus(password)
 uri = f"mongodb+srv://{username}:{escaped_password}@cluster0.gngaygj.mongodb.net/?appName=Cluster0"
 
